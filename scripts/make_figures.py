@@ -12,6 +12,11 @@ Both figures are drawn only from the CSVs written by phase1_closure.py and
 phase1_chemistries.py; nothing is hand-placed, so a rerun of those analyses
 propagates to the figures.
 
+Panels carry only their letter. What each panel shows belongs in the figure caption,
+where a reader looks for it and where it can be read without enlarging the graphic;
+a conclusion lettered onto the plotting area reads as an artefact of the plotting
+script rather than as a figure an author composed.
+
 Sizing follows ACS Appendix 2 (Preparing Graphics): double-column graphics are
 between 300 and 504 points wide (4.167-7 in), the maximum depth is 660 points
 (9.167 in) including the caption, lettering is at least 4.5 points at the final
@@ -91,7 +96,7 @@ def figure1(rows, out):
     ax.set_ylim(0, 1.0)
     ax.set_xlabel("diffusion time $t$")
     ax.set_ylabel("closure share of gradient norm")
-    ax.set_title("(a) Closure share stays in the\n     refuted band", loc="left")
+    ax.set_title("(a)", loc="left", fontweight="bold")
     ax.legend(frameon=False, ncol=2, handlelength=1.4, columnspacing=0.8)
 
     ax = axes[1]
@@ -104,7 +109,7 @@ def figure1(rows, out):
     ax.set_yscale("log")
     ax.set_xlabel("diffusion time $t$")
     ax.set_ylabel("enrichment over an ordinary bond")
-    ax.set_title("(b) Enrichment is real but\n     bounded", loc="left")
+    ax.set_title("(b)", loc="left", fontweight="bold")
 
     ax = axes[2]
     for i, (name, rs) in enumerate(sorted(groups.items())):
@@ -114,7 +119,7 @@ def figure1(rows, out):
                 color=PALETTE[i % len(PALETTE)])
     ax.set_xlabel("diffusion time $t$")
     ax.set_ylabel(r"mean closure distance ($\mathrm{\AA}$)")
-    ax.set_title("(c) The ring does open, as the\n     hypothesis assumes", loc="left")
+    ax.set_title("(c)", loc="left", fontweight="bold")
 
     for a in axes:
         style(a)
@@ -149,7 +154,7 @@ def figure2(rows, out):
     ax.set_ylim(0, 1.0)
     ax.set_xlabel("diffusion time $t$")
     ax.set_ylabel("closure share of gradient norm")
-    ax.set_title("(a) Only the bicycle group crosses into the\n     partial band", loc="left")
+    ax.set_title("(a)", loc="left", fontweight="bold")
     ax.legend(frameon=False, handlelength=1.4)
 
     ax = axes[1]
@@ -179,8 +184,7 @@ def figure2(rows, out):
     ax.axhline(1.0, color="0.45", ls=":", lw=0.8)
     ax.set_xticks(list(xs), [label[t] for t in order])
     ax.set_ylabel("enrichment over an ordinary bond")
-    ax.set_title("(b) Adding restraints raises the group,\n"
-                 "     not the restraint", loc="left")
+    ax.set_title("(b)", loc="left", fontweight="bold")
     ax.legend(frameon=False)
 
     for a in axes:
