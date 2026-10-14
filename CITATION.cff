@@ -4,7 +4,7 @@ title: "MacroPPI-Bench: data and code for 'Generative AI for Macrocyclic Peptide
 version: "1.0"
 date-released: "2026-10-14"
 license: MIT
-doi: "10.5281/zenodo.23370598"
+doi: "10.5281/zenodo.23370597"
 repository-code: "https://github.com/sambhajithakar/macroppi-bench"
 authors:
   - family-names: "Thakar"
