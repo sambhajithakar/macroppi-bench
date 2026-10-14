@@ -1,4 +1,4 @@
-# MacroPPI-Bench v1.0 — data and code for *Ring Closure Does Not Dominate Energy Guidance in Macrocyclic Peptide Design*
+# MacroPPI-Bench v1.0 — data and code for *Generative AI for Macrocyclic Peptide Design: Two Assumptions That Do Not Hold*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23370598.svg)](https://doi.org/10.5281/zenodo.23370598)
 

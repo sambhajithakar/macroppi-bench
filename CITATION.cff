@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this benchmark or code, please cite both the software archive and the paper."
-title: "MacroPPI-Bench: data and code for 'Ring Closure Does Not Dominate Energy Guidance in Macrocyclic Peptide Design'"
+title: "MacroPPI-Bench: data and code for 'Generative AI for Macrocyclic Peptide Design: Two Assumptions That Do Not Hold'"
 version: "1.0"
 date-released: "2026-10-14"
 license: MIT
