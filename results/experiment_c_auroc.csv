@@ -1,0 +1,9 @@
+label,metric,preferred,auroc,ci95_lo,ci95_hi,p_perm,top10_enrich,top20_enrich
+binder_screen,contact_molecular_surface_A2,higher,0.4881,0.2593,0.6944,0.9535,0.836,0.975
+binder_screen,rosetta_ddg_kcal_mol,lower,0.6190,0.3846,0.8052,0.3095,1.393,1.254
+binder_screen,sap,lower,0.3810,0.1765,0.6068,0.3036,1.114,0.975
+binder_screen,ipae,lower,0.5714,0.3462,0.8039,0.5473,0.836,1.114
+binder_characterised,contact_molecular_surface_A2,higher,0.4898,0.1538,0.8295,1.0000,0.000,0.975
+binder_characterised,rosetta_ddg_kcal_mol,lower,0.6531,0.2297,1.0000,0.3308,1.300,1.300
+binder_characterised,sap,lower,0.4286,0.1795,0.8500,0.6961,1.300,0.975
+binder_characterised,ipae,lower,0.5306,0.1379,0.8667,0.8763,1.300,1.300

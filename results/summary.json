@@ -1,0 +1,28 @@
+{
+  "synthetic": false,
+  "structures": {
+    "9CDT_MCB_D2": 16,
+    "9CDU_RBB_D10": 14,
+    "9HGC_GAB_D8": 15,
+    "9HGD_GAB_D23": 13,
+    "9CDZ_AfCycDesign_MDM2": 16
+  },
+  "experiment_a_verdict": {
+    "verdict": "REFUTED at the cheap stage. Report this. The paper's framing must change, and CP-Composer's 0% needs a different explanation.",
+    "mean_f_closure_mid_t": 0.1552377485971814,
+    "fraction_of_t_over_0.5": 0.0,
+    "mean_per_bond_enrichment_mid_t": 2.7627215001791825,
+    "mean_gradient_alignment_mid_t": 0.2724538610163217,
+    "secondary_note": "Enrichment and alignment are SECONDARY and carry no pre-registered threshold. They describe the effect; only f_closure decides the verdict."
+  },
+  "experiment_b_toy": {
+    "constant.rmsd_to_native_A": "4.64 +/- 0.95",
+    "constant.closure_dist_A": "3.80 +/- 0.02",
+    "constant.bond_rmsd_A": "0.01 +/- 0.01",
+    "constant.radius_gyration_A": "5.38 +/- 0.50",
+    "aware.rmsd_to_native_A": "4.68 +/- 0.97",
+    "aware.closure_dist_A": "3.80 +/- 0.02",
+    "aware.bond_rmsd_A": "0.01 +/- 0.01",
+    "aware.radius_gyration_A": "5.35 +/- 0.49"
+  }
+}

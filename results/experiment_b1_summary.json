@@ -1,0 +1,17 @@
+{
+  "head_to_tail": {
+    "f_closure": 0.139,
+    "enrichment": 3.305,
+    "verdict": "refuted"
+  },
+  "disulfide": {
+    "f_closure": 0.1688,
+    "enrichment": 4.479,
+    "verdict": "refuted"
+  },
+  "bicycle": {
+    "f_closure": 0.2224,
+    "enrichment": 5.999,
+    "verdict": "partial"
+  }
+}

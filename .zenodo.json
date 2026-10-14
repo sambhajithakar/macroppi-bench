@@ -1,0 +1,30 @@
+{
+  "title": "MacroPPI-Bench: data and code for \"Ring Closure Does Not Dominate Energy Guidance in Macrocyclic Peptide Design\"",
+  "upload_type": "dataset",
+  "version": "1.0",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Thakar, Sambhaji Balaso",
+      "orcid": "0000-0002-0423-2015",
+      "affiliation": "Advanced Data Science and Gen AI Unit, Aditya BioNova Analytics, Pune, Maharashtra, India"
+    },
+    {
+      "name": "Ghorpade, Pradnya Namdev",
+      "orcid": "0000-0001-6593-825X",
+      "affiliation": "Advanced Data Science and Gen AI Unit, Aditya BioNova Analytics, Pune, Maharashtra, India"
+    }
+  ],
+  "description": "<p>Curated benchmark, analysis code and generated results for the study <em>Ring Closure Does Not Dominate Energy Guidance in Macrocyclic Peptide Design</em>. Contains MacroPPI-Bench Tier 1 (65 synthesised macrocyclic peptide designs, 24 binders, 6 protein targets, with per-row provenance); a per-design table joining all 77 designs of the RFpeptides campaign to their published in-silico filter scores, synthesis status and binding outcome; the closure-share gradient diagnostic and its pre-registered decision rule applied to head-to-tail, disulfide and bicycle topologies; and the within-target retrospective evaluation of the four published selection filters. Pure Python 3 with NumPy and Matplotlib; no GPU, licensed software or force-field package required. All stochastic steps are seeded and reruns reproduce the deposited outputs exactly.</p>",
+  "keywords": [
+    "macrocyclic peptides",
+    "diffusion models",
+    "de novo binder design",
+    "protein-protein interactions",
+    "energy guidance",
+    "benchmark",
+    "negative result"
+  ],
+  "language": "eng"
+}

@@ -1,0 +1,11 @@
+condition,f_closure_mean,per_bond_enrichment
+baseline,0.1542,2.768
+k_bond x0.1,0.1367,2.768
+k_bond x10,0.1563,2.768
+k_bond x100,0.1565,2.768
+k_steric=0,0.1552,2.768
+k_steric=100,0.1458,2.768
+k_angle=0,0.1547,2.768
+k_angle=200,0.1497,2.768
+no interface term,0.1549,2.768
+k_iface=50,0.1387,2.768

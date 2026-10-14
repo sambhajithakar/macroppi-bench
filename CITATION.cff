@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this benchmark or code, please cite both the software archive and the paper."
+title: "MacroPPI-Bench: data and code for 'Ring Closure Does Not Dominate Energy Guidance in Macrocyclic Peptide Design'"
+version: "1.0"
+date-released: "2026-10-14"
+license: MIT
+authors:
+  - family-names: "Thakar"
+    given-names: "Sambhaji Balaso"
+    orcid: "https://orcid.org/0000-0002-0423-2015"
+    affiliation: "Advanced Data Science and Gen AI Unit, Aditya BioNova Analytics, Pune, Maharashtra, India"
+    email: "drsambhajithakar@adityabionova.com"
+  - family-names: "Ghorpade"
+    given-names: "Pradnya Namdev"
+    orcid: "https://orcid.org/0000-0001-6593-825X"
+    affiliation: "Advanced Data Science and Gen AI Unit, Aditya BioNova Analytics, Pune, Maharashtra, India"

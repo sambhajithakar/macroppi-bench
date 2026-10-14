@@ -1,0 +1,75 @@
+# MacroPPI-Bench Tier 1 seed — de novo designed macrocyclic peptides with PUBLISHED
+# experimental binding outcomes against protein-protein interaction targets.
+#
+# Sources (two papers, both from the Bhardwaj/Baker orbit, both 2025):
+#   rettie2025rfpeptides  Rettie SA, Juergens D, Adebomi V, Bhardwaj G et al.,
+#                         "Accurate de novo design of high-affinity protein-binding macrocycles
+#                         using deep learning", Nat Chem Biol 21:1948-1956 (2025),
+#                         doi 10.1038/s41589-025-01929-w, PMID 40542165.
+#   rettie2025afcycdesign Rettie SA, Campbell KV, Bera AK, Kang A, Kozlov S, DiMaio F,
+#                         Ovchinnikov S, Bhardwaj G et al., "Cyclic peptide structure prediction
+#                         and design using AlphaFold2", Nat Commun 16:4730 (2025),
+#                         doi 10.1038/s41467-025-59940-7. (Author list truncated on the
+#                         publisher page; complete it from the PDF before submission.)
+#
+# IMPORTANT — what this file does and does not contain.
+# Only NAMED designs whose affinity is stated in a paper's MAIN TEXT get an individual row.
+# Per-design rows for every synthesised design (with in-silico filter scores joined to binding
+# outcome) require the supplementary tables, which are behind publisher access and have NOT
+# been read. Aggregate counts per target are in the TARGET_SUMMARY block and ARE confirmed.
+# DO NOT expand this file with per-design rows invented from the aggregates.
+# Rows with an empty affinity_value are confirmed binders whose numeric value lives only in a
+# figure. Leave them empty. Do not impute from a stated range.
+#
+# affinity_method: SPR = surface plasmon resonance, single-cycle kinetics;
+#   AlphaLISA_IC50 / FP_competition_IC50 = competition assays, IC50 not Kd — do NOT pool these
+#   with SPR Kd values in a single rank correlation without saying so.
+# binder: 1 = experimentally confirmed binder; 0 = synthesised, no binding detected;
+#         censored = synthesis failed at cyclization, no affinity label (NOT missing at random).
+design_id,target,target_uniprot,target_chembl_id,interface_type,cyclization,binder,affinity_value,affinity_unit,affinity_method,pdb_complex,source,notes
+MCB_D2,MCL1,Q07820,CHEMBL4361,PPI_BH3_groove,head-to-tail,1,2.0,uM,SPR,9CDT,rettie2025rfpeptides,"X-ray 2.1 A; macrocycle Ca RMSD 0.7 A vs design model"
+MDB_D8,MDM2,Q00987,CHEMBL5023,PPI_p53_pocket,head-to-tail,1,1.9,uM,SPR,,rettie2025rfpeptides,"No deposited complex. 9CDZ was previously guessed to be this structure - THAT GUESS WAS WRONG, see note below"
+GAB_D8,GABARAP,O95166,,LIR_like,head-to-tail,1,6.0,nM,SPR,9HGC,rettie2025rfpeptides,"IC50 0.7 nM by AlphaScreen; 9HGC is the complex with the homolog GABARAPL1 (119 res), 2.52 A, 15-res peptide, 4 copies A-H; two bound conformations"
+GAB_D23,GABARAP,O95166,,LIR_like,head-to-tail,1,36.0,nM,SPR,9HGD,rettie2025rfpeptides,"IC50 2.5 nM by AlphaScreen; 9HGD = GABARAP + 13-res cyclic peptide, 1.50 A, hetero 2-mer"
+RBB_D10,RbtA,A0A0D5YFQ2,,designed_vs_predicted_structure,head-to-tail,1,9.4,nM,SPR,9CDU,rettie2025rfpeptides,"A. baumannii Rhombotarget A; no experimental structure existed at design time; X-ray RMSD 1.4 A. 9CDU = RbtA(465 res, chains A/C) + 14-res peptide(chains B/D), 2.61 A. Apo RbtA = 9CDV (2.00 A)"
+RMG_14,MDM2,Q00987,CHEMBL5023,PPI_p53_pocket,head-to-tail,1,338.4,nM,AlphaLISA_IC50,,rettie2025afcycdesign,"AfCycDesign, NOT RFpeptides. IC50 by AlphaLISA dose-response. Variant RMG_14c (5 substitutions) ~10x better by SPR single-cycle kinetics, KD not in main text"
+RMG_15,MDM2,Q00987,CHEMBL5023,PPI_p53_pocket,head-to-tail,1,,,AlphaLISA_IC50,,rettie2025afcycdesign,"AfCycDesign. Main text gives only the 0.34-1.38 uM range covering RMG_14/15/16; individual value is in Fig. 5 - VERIFY before use, do not impute"
+RMG_16,MDM2,Q00987,CHEMBL5023,PPI_p53_pocket,head-to-tail,1,,,AlphaLISA_IC50,,rettie2025afcycdesign,"AfCycDesign. Same range caveat as RMG_15 - VERIFY from Fig. 5"
+KC3,KEAP1,Q14145,CHEMBL2069156,PPI_Nrf2_Kelch,head-to-tail,1,,,FP_competition_IC50,,rettie2025afcycdesign,"AfCycDesign. Discussion states IC50 < 200 nM for all three Keap1 designs; individual value in Fig. 6 - VERIFY"
+KC4,KEAP1,Q14145,CHEMBL2069156,PPI_Nrf2_Kelch,head-to-tail,1,,,FP_competition_IC50,,rettie2025afcycdesign,"AfCycDesign. ~2x more potent than the 16-res Nrf2 reference peptide; IC50 < 200 nM; exact value in Fig. 6 - VERIFY"
+
+# TARGET_SUMMARY (confirmed from each paper's main text)
+# source,target,synthesised,bound,cyclization_failures,total_designed
+# rettie2025rfpeptides,MCL1,14,3,13,27
+# rettie2025rfpeptides,MDM2,8,3,3,11
+# rettie2025rfpeptides,GABARAP,6,2,,
+# rettie2025rfpeptides,RbtA,11,4,,
+# rettie2025rfpeptides,TOTAL,39,12,16+,
+# rettie2025afcycdesign,MDM2,14,5,,16        # 5/14 gave >50% inhibition at 50 uM single-conc screen
+# rettie2025afcycdesign,KEAP1,3,3,,6
+# rettie2025afcycdesign,TOTAL,17,8,,22
+# ALL,TOTAL,56,20,16+,
+#
+# Note on the AfCycDesign "bound" count: 5/14 MDM2 designs cleared a >50%-inhibition threshold
+# at a single 50 uM concentration; only the top 3 went to dose-response. A 50 uM screen is a
+# much weaker criterion than RFpeptides' SPR. Treat the two sources as separate strata, or
+# define one common binder threshold and apply it to both — do not silently merge them.
+#
+# Note on censoring: 13/27 MCL1 and 3/11 MDM2 RFpeptides designs could not be tested because of
+# poor cyclization yield. They have no affinity label and must be reported as censored, never
+# dropped. GABARAP and RbtA cyclization-failure counts were not stated in the text read; VERIFY.
+#
+# DEPOSITED STRUCTURES — all assignments below verified individually on RCSB, 12 Oct 2026.
+# 9CDT  MCL-1 + MCB_D2 peptide, 2.1 A                      rettie2025rfpeptides
+# 9CDU  Rhombotarget A (465 res, A/C) + RBB_D10 14-res peptide (B/D), 2.61 A   rettie2025rfpeptides
+# 9CDV  apo Rhombotarget A, 2.00 A                         rettie2025rfpeptides
+# 9HGC  GABARAPL1 (119 res) + GAB_D8 15-res cyclic peptide, 2.52 A, 4 copies   rettie2025rfpeptides
+# 9HGD  GABARAP (119 res) + GAB_D23 13-res cyclic peptide, 1.50 A              rettie2025rfpeptides
+# 9CDZ  MDM2 (Q00987, 108 res) + 16-res synthetic peptide, 1.72 A              rettie2025afcycdesign
+#
+# CORRECTION, recorded deliberately. An earlier version of this file speculated that 9CDZ was
+# the RFpeptides MDM2-MDB_D8 complex, on the strength of it appearing under MDM2 PDBe xrefs.
+# It is not. Its primary citation is the AfCycDesign paper. MDB_D8 has NO deposited structure.
+# The identity of the 16-residue peptide in 9CDZ (which RMG design, if any) is not established
+# from the structure page alone and must be read off the AfCycDesign paper before 9CDZ is used
+# as a structural reference for any named design.

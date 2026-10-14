@@ -1,0 +1,37 @@
+
+PRIMARY  binder = detectable at <=100 uM   14/39 synthesised designs
+metric                              AUROC            95% CI        p   top10x
+Contact molecular surface (A^2)     0.488  [0.259, 0.694]    0.954     0.84
+    GABARAP                       0.500   (n=6, 4 binders)
+    MCL1                          0.667   (n=14, 3 binders)
+    MDM2                          0.067   (n=8, 3 binders)
+    RbtA                          0.500   (n=11, 4 binders)
+Rosetta ddG (kcal/mol)              0.619  [0.385, 0.805]    0.309     1.39
+    GABARAP                       0.500   (n=6, 4 binders)
+    MCL1                          0.909   (n=14, 3 binders)
+    MDM2                          0.000   (n=8, 3 binders)
+    RbtA                          0.643   (n=11, 4 binders)
+SAP                                 0.381  [0.176, 0.607]    0.304     1.11
+    GABARAP                       0.500   (n=6, 4 binders)
+    MCL1                          0.303   (n=14, 3 binders)
+    MDM2                          0.333   (n=8, 3 binders)
+    RbtA                          0.464   (n=11, 4 binders)
+AF2 interface PAE                   0.571  [0.346, 0.804]    0.547     0.84
+    GABARAP                       0.125   (n=6, 4 binders)
+    MCL1                          0.424   (n=14, 3 binders)
+    MDM2                          0.733   (n=8, 3 binders)
+    RbtA                          0.786   (n=11, 4 binders)
+
+SECONDARY  binder = carried to a measured affinity   6/39
+Contact molecular surface (A^2)     0.490  [0.154, 0.830]    1.000
+Rosetta ddG (kcal/mol)              0.653  [0.230, 1.000]    0.331
+SAP                                 0.429  [0.179, 0.850]    0.696
+AF2 interface PAE                   0.531  [0.138, 0.867]    0.876
+
+CENSORING  synthesised (n=39) vs never tested (n=38)
+Contact molecular surface (A^2)     0.399  p=0.1328   mean 390.26 vs 403.48
+Rosetta ddG (kcal/mol)              0.426  p=0.2697   mean -41.06 vs -42.12
+SAP                                 0.510  p=0.8867   mean 27.22 vs 27.55
+AF2 interface PAE                   0.572  p=0.2877   mean 0.17 vs 0.20
+
+wrote results/experiment_c_retrospective.json and experiment_c_auroc.csv
