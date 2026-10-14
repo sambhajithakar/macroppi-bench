@@ -4,6 +4,8 @@ title: "MacroPPI-Bench: data and code for 'Ring Closure Does Not Dominate Energy
 version: "1.0"
 date-released: "2026-10-14"
 license: MIT
+doi: "10.5281/zenodo.23370598"
+repository-code: "https://github.com/sambhajithakar/macroppi-bench"
 authors:
   - family-names: "Thakar"
     given-names: "Sambhaji Balaso"

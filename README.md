@@ -1,5 +1,7 @@
 # MacroPPI-Bench v1.0 — data and code for *Ring Closure Does Not Dominate Energy Guidance in Macrocyclic Peptide Design*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23370598.svg)](https://doi.org/10.5281/zenodo.23370598)
+
 This archive contains everything needed to reproduce every number, table and figure in the
 manuscript. It is pure Python 3 (NumPy, Matplotlib, pandas). No GPU, no force-field package and
 no licensed software are required; the full set of analyses runs in minutes on a laptop CPU.
@@ -80,4 +82,5 @@ licences of their sources.
 
 ## Citing
 
-See CITATION.cff.
+Archived at https://doi.org/10.5281/zenodo.23370598 (concept DOI; always resolves to the
+newest version). Machine-readable metadata is in CITATION.cff.
