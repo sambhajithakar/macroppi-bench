@@ -1,5 +1,5 @@
 {
-  "title": "MacroPPI-Bench: data and code for \"Generative AI for Macrocyclic Peptide Design: A Benchmark and Two Refuted Assumptions\"",
+  "title": "MacroPPI-Bench: data and code for \"Generative AI for Macrocyclic Peptides at Cancer and Other Protein Interfaces: Two Refuted Assumptions\"",
   "upload_type": "dataset",
   "version": "1.0",
   "license": "cc-by-4.0",
@@ -16,7 +16,7 @@
       "affiliation": "Advanced Data Science and Gen AI Unit, Aditya BioNova Analytics, Pune, Maharashtra, India"
     }
   ],
-  "description": "<p>Curated benchmark, analysis code and generated results for the study <em>Generative AI for Macrocyclic Peptide Design: A Benchmark and Two Refuted Assumptions</em>. Contains MacroPPI-Bench Tier 1 (65 synthesised macrocyclic peptide designs, 24 binders, 6 protein targets, with per-row provenance); a per-design table joining all 77 designs of the RFpeptides campaign to their published in-silico filter scores, synthesis status and binding outcome; the closure-share gradient diagnostic and its pre-registered decision rule applied to head-to-tail, disulfide and bicycle topologies; and the within-target retrospective evaluation of the four published selection filters. Pure Python 3 with NumPy and Matplotlib; no GPU, licensed software or force-field package required. All stochastic steps are seeded and reruns reproduce the deposited outputs exactly.</p>",
+  "description": "<p>Curated benchmark, analysis code and generated results for the study <em>Generative AI for Macrocyclic Peptides at Cancer and Other Protein Interfaces: Two Refuted Assumptions</em>. Contains MacroPPI-Bench Tier 1 (65 synthesised macrocyclic peptide designs, 24 binders, 6 protein targets, with per-row provenance); a per-design table joining all 77 designs of the RFpeptides campaign to their published in-silico filter scores, synthesis status and binding outcome; the closure-share gradient diagnostic and its pre-registered decision rule applied to head-to-tail, disulfide and bicycle topologies; and the within-target retrospective evaluation of the four published selection filters. Pure Python 3 with NumPy and Matplotlib; no GPU, licensed software or force-field package required. All stochastic steps are seeded and reruns reproduce the deposited outputs exactly.</p>",
   "keywords": [
     "macrocyclic peptides",
     "diffusion models",
