@@ -60,7 +60,7 @@ def main() -> None:
     ax.set_xlim(0, 1.18)
     ax.set_xticks([0, 0.25, 0.5, 0.75, 1.0])
     ax.set_xlabel("AUROC, binder vs non-binder\n(pooled within target)")
-    ax.set_title("(a) No filter separates binders", fontsize=7, loc="left")
+    ax.set_title("(a)", loc="left", fontweight="bold")
 
     # (b) per-target AUROC
     ax = axes[1]
@@ -76,7 +76,7 @@ def main() -> None:
     ax.set_xticks(range(len(tgts)),
                   [f"{t}\n{n[t]['n_binders']}/{n[t]['n']}" for t in tgts], fontsize=6)
     ax.set_yticks(range(len(ORDER)), [SHORT[m] for m in ORDER], fontsize=6)
-    ax.set_title("(b) Per target (binders/tested)", fontsize=7, loc="left")
+    ax.set_title("(b)", loc="left", fontweight="bold")
     fig.colorbar(im, ax=ax, fraction=0.046, label="AUROC")
 
     # (c) the best-performing metric, design by design
@@ -93,8 +93,7 @@ def main() -> None:
     ax.set_xticks(range(len(tgts)), tgts, fontsize=6, rotation=20)
     ax.set_ylabel("Rosetta ddG (kcal/mol)")
     # Deliberately neutral: binders sit high on MCL1 and low on MDM2, which is the point.
-    ax.set_title("(c) Best of the four, by target;\n     binders do not cluster",
-                 fontsize=7, loc="left")
+    ax.set_title("(c)", loc="left", fontweight="bold")
     ax.plot([], [], "o", color="#c0392b", label="binder")
     ax.plot([], [], "x", color="0.55", label="no binding")
     ax.legend(fontsize=6, frameon=False)
@@ -112,8 +111,7 @@ def main() -> None:
     ax.set_xticks(x, [SHORT[m] for m in ORDER], fontsize=6)
     ax.set_ylim(0, 0.8)
     ax.set_ylabel("AUROC, synthesised vs censored", fontsize=7)
-    ax.set_title(f"(d) Censored designs ({res['censoring']['n_censored']}) score\n"
-                 "     like tested ones", fontsize=7, loc="left")
+    ax.set_title("(d)", loc="left", fontweight="bold")
 
     for ax in axes:
         ax.spines[["top", "right"]].set_visible(False)
