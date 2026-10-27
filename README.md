@@ -21,6 +21,7 @@ scripts/
   phase1_closure.py                   Experiment A — closure-share diagnostic on head-to-tail
                                       macrocycles, with the force-field scaling and
                                       term-removal sensitivity sweeps.
+  phase1_sensitivity.py               Experiment A sensitivity table, regenerated (see below).
   phase1_chemistries.py               Experiment B — the same diagnostic for disulfide and
                                       bicycle topologies.
   extract_rfpeptides_si.py            Rebuilds tier1_rfpeptides_per_design.csv from the
@@ -65,7 +66,7 @@ RCSB is unreachable, the same accessions can be fetched from the wwPDB AWS mirro
 from a directory of `.ent` files obtained the same way. Each script's docstring carries the
 command line exactly as it was run.
 
-All stochastic steps are seeded; reruns reproduce the deposited outputs exactly.
+All stochastic steps are seeded. Rerun on 27 Oct 2026 (NumPy 2.5.3, structures from the wwPDB AWS snapshot of 1 Jan 2026), `phase1_closure.py --seed 0 --samples 128`, `phase1_chemistries.py` and `phase2_retrospective.py` reproduce the deposited outputs byte for byte. The Experiment A sensitivity table (`results/experiment_a_sensitivity.csv`) was produced by an earlier script that was not deposited; `phase1_sensitivity.py` regenerates it (`results/experiment_a_sensitivity_rerun.csv`, agreeing within 0.002 in every condition).
 
 `extract_rfpeptides_si.py` additionally requires the Supporting Information PDF of Rettie et al.,
 *Nat. Chem. Biol.* (2025), which is not redistributed here — the script regenerates the joined

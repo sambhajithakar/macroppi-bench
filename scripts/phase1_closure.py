@@ -4,7 +4,7 @@ Phase 1: is the closure term dominating the energy-guidance gradient?
 
 COMMAND LINE AS RUN (Section 4.1 of the manuscript)
 ---------------------------------------------------
-    python3 phase1_closure.py --out results --seed 0
+    python3 phase1_closure.py --out results --seed 0 --samples 128 [--local-dir <dir of .ent files>]
 
 Structures are downloaded to --cache (default pdb_cache/) on first run. If RCSB is
 unreachable, fetch the same accessions from the wwPDB AWS mirror into a directory and
