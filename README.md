@@ -30,6 +30,8 @@ scripts/
   phase2_retrospective.py             Experiment C — within-target pooled AUROC for the four
                                       published filters, stratified bootstrap and label
                                       permutation null.
+  phase3_power.py                     Simulated power of the retrospective test (seed 20261027);
+                                      writes results/phase3_power.csv. Simulation, not measured data.
   figure4_retrospective.py            Figure 3 of the manuscript.
   curate_chembl_macrocycles.py        Tier 2 harvester (not used for any manuscript result).
 tests/
