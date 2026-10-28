@@ -1,4 +1,4 @@
-# MacroPPI-Bench v1.0 — data and code for *Generative AI for Macrocyclic Peptides at Cancer and Other Interfaces: Two Refuted Assumptions*
+# MacroPPI-Bench v1.2 — data and code for *Generative AI for Macrocyclic Peptides at Cancer and Other Interfaces: One Refuted Mechanism and One Inconclusive Filter Test*
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23370597.svg)](https://doi.org/10.5281/zenodo.23370597)
 
@@ -10,8 +10,11 @@ no licensed software are required; the full set of analyses runs in minutes on a
 
 ```
 data/
-  tier1_designs.csv                   MacroPPI-Bench Tier 1: 65 synthesised designs,
-                                      24 binders, 6 targets, with provenance per row.
+  tier1_designs.csv                   MacroPPI-Bench Tier 1 seed: 10 designs with
+                                      published binding values, with provenance per row.
+                                      (The 65 synthesised designs / 26 binders / 6 targets
+                                      in the manuscript are tallied from the three source
+                                      papers; per-design records exist for one campaign.)
   tier1_rfpeptides_per_design.csv      All 77 RFpeptides designs joined from the published
                                       Supporting Information to synthesis and binding
                                       outcome: four in-silico filter scores, synthesis
