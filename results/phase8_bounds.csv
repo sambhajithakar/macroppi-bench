@@ -1,0 +1,21 @@
+filter,pi,observed_tested_only,auroc_min,auroc_max,auroc_random_mean
+Contact molecular surface (A^2),0.0,0.488,0.395,0.395,0.395
+Contact molecular surface (A^2),0.1,0.488,0.293,0.569,0.443
+Contact molecular surface (A^2),0.2,0.488,0.229,0.657,0.46
+Contact molecular surface (A^2),0.36,0.488,0.232,0.739,0.491
+Contact molecular surface (A^2),0.5,0.488,0.258,0.77,0.512
+Rosetta ddG (kcal/mol),0.0,0.619,0.532,0.532,0.532
+Rosetta ddG (kcal/mol),0.1,0.619,0.402,0.674,0.553
+Rosetta ddG (kcal/mol),0.2,0.619,0.346,0.734,0.554
+Rosetta ddG (kcal/mol),0.36,0.619,0.344,0.8,0.575
+Rosetta ddG (kcal/mol),0.5,0.619,0.372,0.822,0.595
+SAP,0.0,0.381,0.455,0.455,0.455
+SAP,0.1,0.381,0.33,0.605,0.461
+SAP,0.2,0.381,0.254,0.685,0.463
+SAP,0.36,0.381,0.184,0.725,0.456
+SAP,0.5,0.381,0.172,0.748,0.455
+AF2 interface PAE,0.0,0.571,0.602,0.602,0.602
+AF2 interface PAE,0.1,0.571,0.433,0.716,0.556
+AF2 interface PAE,0.2,0.571,0.347,0.769,0.543
+AF2 interface PAE,0.36,0.571,0.268,0.787,0.516
+AF2 interface PAE,0.5,0.571,0.231,0.758,0.497

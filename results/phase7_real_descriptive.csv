@@ -1,0 +1,13 @@
+structure,n_residues,topology,n_closure_restraints,f_closure_mean,f_T4_bond_only
+1JBL,14,bicycle,2,0.233,0.234
+1JBL,14,disulfide,1,0.162,0.17
+1JBL,14,head_to_tail,1,0.162,0.17
+1K48,29,bicycle,4,0.209,0.231
+1K48,29,disulfide,3,0.178,0.205
+1K48,29,head_to_tail,1,0.116,0.123
+1NB1,29,bicycle,4,0.217,0.231
+1NB1,29,disulfide,3,0.176,0.205
+1NB1,29,head_to_tail,1,0.116,0.123
+1SFI,14,bicycle,2,0.231,0.234
+1SFI,14,disulfide,1,0.159,0.17
+1SFI,14,head_to_tail,1,0.162,0.17

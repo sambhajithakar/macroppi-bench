@@ -1,0 +1,9 @@
+filter,top_fraction,binders_in_selection,expected_by_chance,enrichment,ci_lo,ci_hi
+Contact molecular surface (A^2),0.25,3.0,4.03,0.744,0.186,1.494
+Contact molecular surface (A^2),0.5,6.0,7.18,0.835,0.431,1.302
+Rosetta ddG (kcal/mol),0.25,5.0,4.03,1.24,0.678,2.03
+Rosetta ddG (kcal/mol),0.5,8.0,7.18,1.114,0.657,1.456
+SAP,0.25,3.0,4.03,0.744,0.211,1.368
+SAP,0.5,6.0,7.18,0.835,0.389,1.304
+AF2 interface PAE,0.25,5.0,4.03,1.24,0.574,1.848
+AF2 interface PAE,0.5,8.0,7.18,1.114,0.657,1.482

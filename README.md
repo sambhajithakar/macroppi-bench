@@ -90,3 +90,19 @@ licences of their sources.
 
 Archived at https://doi.org/10.5281/zenodo.23370597 (concept DOI; always resolves to the
 newest version). Machine-readable metadata is in CITATION.cff.
+
+## Additions in v1.3 (13 Nov 2026): closure-share law, population test, identification bounds, latent test
+All numbers in the accompanying manuscript's Sections 4.5 and 4.6 regenerate from these scripts and results; each experiment's rule was written to `docs/PREREGISTRATION_theory_12Nov2026.md` (Amendments 1 to 8) before it was run. This plan was not lodged in an external registry, so it is internally pre-specified only. Simulations are labelled as such.
+
+| Script | What it does | Output (`results/`) | Seed |
+|---|---|---|---|
+| `phase4_theory.py`, `phase5_theory_v2_schedule.py` | Closure-share law v1, v2 (both failed their rules), open-chain share, closure-aware schedule (not supported) | `phase4_theory.csv`, `phase5_*.csv` | see script |
+| `phase6_theory_v3.py` | Jensen-corrected law v3 on new ring sizes | `phase6_theory_v3.csv` | see script |
+| `phase7_multi_restraint.py` | v4, multi-restraint law (failed its rules) | `phase7_multi_restraint.csv`, `phase7_real_descriptive.csv` | 20261205 |
+| `phase7b_multi_restraint_v5.py` | v5, native-length correction, new sizes | `phase7b_multi_restraint_v5.csv` | 20261207 |
+| `phase8_bounds.py` | Identification bounds for the 38 untested designs and decision-level utility | `phase8_bounds.csv`, `phase8_utility.csv` | 20261206 |
+| `phase9_pdb_population.py` | 89 head-to-tail macrocycles from the 1 Jan 2024 wwPDB snapshot | `phase9_pdb_population.csv` | 20261208 |
+| `phase10_latent_closure.py` | Closure share through the decoder of the published CP-Composer autoencoder (CPU); needs github.com/jdp22/CP-Composer_final (code and `checkpoints/autoencoder.pth`) and `torch_scatter_shim.py` | `phase10_latent_closure.csv` | 20261209 |
+| `figure5_law_bounds.py` | Figures 4 and 5 | `figures/figure4_law.*`, `figure5_bounds.*` | none |
+
+`phase10_latent_closure.py` uses a third-party model that is not redistributed here; the autoencoder is the authors' published one and nothing was trained by us.
