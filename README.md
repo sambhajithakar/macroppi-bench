@@ -91,7 +91,7 @@ licences of their sources.
 Archived at https://doi.org/10.5281/zenodo.23370597 (concept DOI; always resolves to the
 newest version). Machine-readable metadata is in CITATION.cff.
 
-## Additions in v1.3 (13 Nov 2026): closure-share law, population test, identification bounds, latent test
+## Additions in v1.3 and v1.4 (13 Nov 2026): closure-share law, population test, identification bounds, latent test
 All numbers in the accompanying manuscript's Sections 4.5 and 4.6 regenerate from these scripts and results; each experiment's rule was written to `docs/PREREGISTRATION_theory_12Nov2026.md` (Amendments 1 to 8) before it was run. This plan was not lodged in an external registry, so it is internally pre-specified only. Simulations are labelled as such.
 
 | Script | What it does | Output (`results/`) | Seed |
@@ -103,6 +103,7 @@ All numbers in the accompanying manuscript's Sections 4.5 and 4.6 regenerate fro
 | `phase8_bounds.py` | Identification bounds for the 38 untested designs and decision-level utility | `phase8_bounds.csv`, `phase8_utility.csv` | 20261206 |
 | `phase9_pdb_population.py` | 89 head-to-tail macrocycles from the 1 Jan 2024 wwPDB snapshot | `phase9_pdb_population.csv` | 20261208 |
 | `phase10_latent_closure.py` | Closure share through the decoder of the published CP-Composer autoencoder (CPU); needs github.com/jdp22/CP-Composer_final (code and `checkpoints/autoencoder.pth`) and `torch_scatter_shim.py` | `phase10_latent_closure.csv` | 20261209 |
+| `phase11_sampler_closure.py` | Closure share along reverse-diffusion trajectories of the published CP-Composer denoiser (energy guidance only, CPU, 60 trajectories); same third-party code and checkpoints (`checkpoints/version_325`) as phase10 | `phase11_sampler_closure.csv`, `phase11_sampler_steps.csv` | 20261210 |
 | `figure5_law_bounds.py` | Figures 4 and 5 | `figures/figure4_law.*`, `figure5_bounds.*` | none |
 
 `phase10_latent_closure.py` uses a third-party model that is not redistributed here; the autoencoder is the authors' published one and nothing was trained by us.
