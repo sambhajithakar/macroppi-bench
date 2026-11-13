@@ -1,7 +1,7 @@
 {
   "title": "MacroPPI-Bench: data and code for \"Generative AI for Macrocyclic Peptides at Cancer and Other Interfaces: One Refuted Mechanism and One Inconclusive Filter Test\"",
   "upload_type": "dataset",
-  "version": "1.2",
+  "version": "1.3",
   "license": "cc-by-4.0",
   "access_right": "open",
   "creators": [
@@ -16,7 +16,7 @@
       "affiliation": "Advanced Data Science and Gen AI Unit, Aditya BioNova Analytics, Kolhapur, Maharashtra, India"
     }
   ],
-  "description": "<p>Curated benchmark, analysis code and generated results for the study <em>Generative AI for Macrocyclic Peptides at Cancer and Other Interfaces: One Refuted Mechanism and One Inconclusive Filter Test</em>. Contains MacroPPI-Bench Tier 1 (10 named designs with published affinities; the 65 synthesised designs and 26 binders across 6 protein targets are tallied in the manuscript from the three source papers); a per-design table joining all 77 designs of the RFpeptides campaign to their published in-silico filter scores, synthesis status and binding outcome; the closure-share gradient diagnostic and its pre-registered decision rule applied to head-to-tail, disulfide and bicycle topologies; and the within-target retrospective evaluation of the four published selection filters. Pure Python 3 with NumPy and Matplotlib; no GPU, licensed software or force-field package required. All stochastic steps are seeded and reruns reproduce the deposited outputs exactly.</p>",
+  "description": "<p>Curated benchmark, analysis code and generated results for the study <em>Generative AI for Macrocyclic Peptides at Cancer and Other Interfaces: One Refuted Mechanism and One Inconclusive Filter Test</em>. Contains MacroPPI-Bench Tier 1 (10 named designs with published affinities; the 65 synthesised designs and 26 binders across 6 protein targets are tallied in the manuscript from the three source papers); a per-design table joining all 77 designs of the RFpeptides campaign to their published in-silico filter scores, synthesis status and binding outcome; the closure-share gradient diagnostic and its pre-specified decision rule (internal plan, not externally registered) applied to head-to-tail, disulfide and bicycle topologies; the within-target retrospective evaluation of the four published selection filters; a closed-form law for the closure share with its tests (89 real macrocycles from the PDB, identification bounds for the untested designs, and a test through the latent space of a published autoencoder). Pure Python 3 with NumPy and Matplotlib; no GPU, licensed software or force-field package required. All stochastic steps are seeded and reruns reproduce the deposited outputs exactly.</p>",
   "keywords": [
     "macrocyclic peptides",
     "diffusion models",
